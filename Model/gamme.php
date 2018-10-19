@@ -1,26 +1,21 @@
 <?php
 
-class Gamme
+class TVA
 {
     private $_id;
-    private $_libelle;
-    private $_marque;
+    private $_nom;
     
-    public function __construct($id, $libelle, $marque)
+    public function __construct($id, $nom)
     {
         // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
         // On lève une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("Gamme : id incorrect!");
+            throw new Exception("Marque : id incorrect!");
         }
-        if(!$this->setLibelle($libelle))
+        if(!$this->setNom($nom))
         {
-            throw new Exception("Gamme : libellé incorrect!");
-        }
-        if(!$this->setMarque($marque))
-        {
-            throw new Exception("Gamme : marque incorrect!");
+            throw new Exception("Marque : nom incorrect!");
         }
     }
     
@@ -28,17 +23,12 @@ class Gamme
     {
         return $this->_id;
     }
-
-    public function getLibelle()
+    
+    public function getNom()
     {
-        return $this->_libelle;
+        return $this->_nom;
     }
-
-    public function getMarque()
-    {
-        return $this->_marque;
-    }
-
+    
     public function setId($id)
     {
         $ok = is_int($id);
@@ -48,27 +38,16 @@ class Gamme
         }
         return $ok;
     }
-
-    public function setLibelle($libelle)
-    {
-        $ok = is_string($libelle);
-        if($ok)
-        {
-            $this->_libelle = $libelle;
-        }
-        return $ok;
-    }
-
-    public function setMarque($marque)
-    {
-        $ok = $marque instanceof Marque;
-        if($ok)
-        {
-            $this->_marque = $marque;
-        }
-        return $ok;
-    }
     
+    public function setNom($nom)
+    {
+        $ok = is_string($nom);
+        if($ok)
+        {
+            $this->_nom = $nom;
+        }
+        return $ok;
+    }
     
 }
 
