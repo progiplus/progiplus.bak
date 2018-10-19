@@ -41,17 +41,34 @@ class CategorieProduit
 
     public function setId($id)
     {
-        $this->_id = $id;
+        $ok = is_int($id);
+        if($ok)
+        {
+            $this->_id = $id;
+        }
+        return $ok;
     }
 
     public function setLibelle($libelle)
     {
-        $this->_libelle = $libelle;
+        $ok = is_string($libelle);
+        if($ok)
+        {
+            $this->_libelle = $libelle;
+        }
+        return $ok;
     }
 
     public function setCatParent($catParent)
     {
-        $this->_catParent = $catParent;
+        $ok = $catParent instanceof CategorieProduit || $catParent == null;
+        if($ok)
+        {
+            $this->_catParent = $catParent;
+        }
+        return $ok;
+        
     }
+
 
 }
