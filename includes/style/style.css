@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
 	max-width: 960px;
@@ -56,3 +57,32 @@ text-align:center;
  margin:10px 0 10px 0;
  }
  
+=======
+table
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,th,td
+{
+  border: 1px solid silver;
+}
+
+th,td
+{
+  padding: 3px;
+  padding-left: 15px;
+}
+
+th
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even)
+{
+  background-color: #f2f2f2;
+}
+>>>>>>> a04f0c0c162f0aee952c5992da68e2e27c6be5be
