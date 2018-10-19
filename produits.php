@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Annuaire Produits</title>
-<link rel="stylesheet" href="includes/style/style.css">
-<link rel="stylesheet" type="text/css" href="includes/datatables.css">
+<link rel="stylesheet" type="text/css" href="includes/style/style.css">
+<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
 <meta charset="UTF-8">
 </head>
 
@@ -45,8 +45,10 @@
   </tbody>
 </table>
 
-<script type="text/javascript" src="includes/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="includes/scripts/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="includes/scripts/datatables.js"></script>
+
 <script type="text/javascript">
 $(document).ready( function () {
   $('#table_clients').DataTable();
