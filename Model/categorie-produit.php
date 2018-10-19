@@ -20,7 +20,7 @@ class CategorieProduit
         }
         if(!$this->setCatParent($catParent))
         {
-            throw new Exception("Catégorie-Produit : catégorie-produit incorrect!");
+            throw new Exception("Catégorie-Produit : catégorie parente incorrecte!");
         }
     }
     
@@ -41,32 +41,17 @@ class CategorieProduit
 
     public function setId($id)
     {
-        $ok = is_int($id);
-        if($ok)
-        {
-            $this->_id = $id;
-        }
-        return $ok;
+        $this->_id = $id;
     }
-    
+
     public function setLibelle($libelle)
     {
-        $ok = is_string($libelle);
-        if($ok)
-        {
-            $this->_libelle = $libelle;
-        }
-        return $ok;
+        $this->_libelle = $libelle;
     }
-    
+
     public function setCatParent($catParent)
     {
-        $ok = $catParent instanceof CategorieProduit;
-        if($ok)
-        {
-            $this->_marque = $catParent;
-        }
-        return $ok;
+        $this->_catParent = $catParent;
     }
 
 }
