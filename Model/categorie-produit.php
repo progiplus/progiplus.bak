@@ -1,26 +1,26 @@
 <?php
 
-class Gamme
+class CategorieProduit
 {
     private $_id;
     private $_libelle;
-    private $_marque;
+    private $_catParent;
     
-    public function __construct($id, $libelle, $marque)
+    public function __construct($id, $libelle, $catParent)
     {
         // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
         // On lève une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("Gamme : id incorrect!");
+            throw new Exception("Catégorie-Produit : id incorrect!");
         }
         if(!$this->setLibelle($libelle))
         {
-            throw new Exception("Gamme : libellé incorrect!");
+            throw new Exception("Catégorie-Produit : libellé incorrect!");
         }
-        if(!$this->setMarque($marque))
+        if(!$this->setCatParent($catParent))
         {
-            throw new Exception("Gamme : marque incorrect!");
+            throw new Exception("Catégorie-Produit : catégorie-produit incorrect!");
         }
     }
     
@@ -34,9 +34,9 @@ class Gamme
         return $this->_libelle;
     }
 
-    public function getMarque()
+    public function getCatParent()
     {
-        return $this->_marque;
+        return $this->_catParent;
     }
 
     public function setId($id)
@@ -48,7 +48,7 @@ class Gamme
         }
         return $ok;
     }
-
+    
     public function setLibelle($libelle)
     {
         $ok = is_string($libelle);
@@ -58,18 +58,15 @@ class Gamme
         }
         return $ok;
     }
-
-    public function setMarque($marque)
+    
+    public function setCatParent($catParent)
     {
-        $ok = $marque instanceof Marque;
+        $ok = $catParent instanceof CategorieProduit;
         if($ok)
         {
-            $this->_marque = $marque;
+            $this->_marque = $catParent;
         }
         return $ok;
     }
-    
-    
-}
 
-?>
+}
