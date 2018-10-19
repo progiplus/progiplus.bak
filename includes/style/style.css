@@ -1,19 +1,26 @@
 table
 {
   border-collapse: collapse;
-  margin: auto;
+  width: 100%;
 }
-td,th
+
+table,th,td
 {
-  border: 1px solid black;
-  min-width: 80px;
-  text-align: center;
+  border: 1px solid silver;
 }
 
-<<<<<<< HEAD
-qeretcerqctqezrcezqiuhctqceryuntcgiqeu Elodie
-=======
+th,td
+{
+  padding-left: 15px;
+}
 
+th
+{
+    background-color: #4CAF50;
+    color: white;
+}
 
-bonjour je suis benjamin
->>>>>>> de7cb3aa59d953d9f1054ad2c3b71e3e13c6ecad
+tr:nth-child(even)
+{
+  background-color: #f2f2f2;
+}
