@@ -3,9 +3,10 @@
 class ligneBonLivraison
 {
     private $_id;
+    private $_produit;
     private $_quantite;
     
-    public function __construct($id, $quantite)
+    public function __construct($id, $produit, $quantite)
     {
         // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
         // On lève une exception si un setter renvoit faux.
@@ -17,11 +18,20 @@ class ligneBonLivraison
         {
             throw new Exception("LigneBonLivraison : quantité incorrecte!");
         }
+        if(!$this->setProduit($produit))
+        {
+            throw new Exception("LigneBonLivraison : produit incorrecte!");
+        }
     }
     
     public function getId()
     {
         return $this->_id;
+    }
+    
+    public function getProduit()
+    {
+        return $this->_produit;
     }
     
     public function getQuantite()
@@ -35,6 +45,16 @@ class ligneBonLivraison
         if($ok)
         {
             $this->_id = $id;
+        }
+        return $ok;
+    }
+    
+    public function setProduit($produit)
+    {
+        $ok = $produit instanceof Produit;
+        if($ok)
+        {
+            $this->_tva = $produit;
         }
         return $ok;
     }

@@ -3,11 +3,12 @@
 class ligneFacture
 {
     private $_id;
+    private $_produit;
     private $_quantite;
     private $_prixUnitaire;
     private $_tva;
     
-    public function __construct($id, $quantite, $prixUnitaire, $tva)
+    public function __construct($id, $produit, $quantite, $prixUnitaire, $tva)
     {
         // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
         // On lève une exception si un setter renvoit faux.
@@ -27,11 +28,20 @@ class ligneFacture
         {
             throw new Exception("LigneFacture : tva incorrect!");
         }
+        if(!$this->setProduit($produit))
+        {
+            throw new Exception("LigneFacture : produit incorrecte!");
+        }
     }
     
     public function getId()
     {
         return $this->_id;
+    }
+    
+    public function getProduit()
+    {
+        return $this->_produit;
     }
     
     public function getQuantite()
@@ -55,6 +65,16 @@ class ligneFacture
         if($ok)
         {
             $this->_id = $id;
+        }
+        return $ok;
+    }
+    
+    public function setProduit($produit)
+    {
+        $ok = $produit instanceof Produit;
+        if($ok)
+        {
+            $this->_tva = $produit;
         }
         return $ok;
     }
