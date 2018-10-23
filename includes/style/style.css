@@ -87,6 +87,15 @@ h1
 	text-align:center;
 }
 
+#bouton_ajouter
+{
+	position:relative;
+	top:-280px;
+	width:20%;
+	margin-left: 55%;
+  margin-right: auto;
+}
+
 .dataTables_wrapper
 {
 	position:relative;

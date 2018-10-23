@@ -22,9 +22,12 @@
     <div class="modal-body">
       <p>Some text in the Modal Body</p>
       <p>Some other text...</p>
+       <button type="button">Valider</button>
     </div>
   </div>
 </div>
+
+<button id="bouton_ajouter" type="button">Ajouter un nouveau produit</button>
 
 <table id="table_produits" class="display">
   <thead>
