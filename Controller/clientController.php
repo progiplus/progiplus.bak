@@ -7,7 +7,22 @@ class clientController extends abstractController
         switch($action)
         {
             case "ajouterClient":
-                return ajouterClient();
+                return $this->ajouterClient();
+                break;
+            case "ajouterContact":
+                return $this->ajouterContact();
+                break;
+            case "ajouterMoyenComm":
+                return $this->ajouterMoyenComm();
+                break;
+            case "ajouterTypeMoyenComm":
+                return $this->ajouterTypeMoyenComm();
+                break;
+            case "listeClient":
+                $this->listeClient();
+                break;
+            default:
+                echo "client : erreur de menu";
                 break;
         }
     }
@@ -74,5 +89,10 @@ class clientController extends abstractController
     {
         // TODO essayer d'instancier un type moyen comm
         return false;
+    }
+
+    public function listeClient()
+    {
+        include_once("client.php");
     }
 }
