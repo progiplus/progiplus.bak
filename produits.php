@@ -84,39 +84,36 @@
 
 <script type="text/javascript">
 
-  var modal = document.getElementById("modal_modif_produit");
-  var btn = document.getElementsByClassName("modal_modif");
-  for(i=0; i<btn.length; i++){
-    btn[i].onclick = function() {
-        modal.style.display = "block";
-    }
+var modal_modif = document.getElementById("modal_modif_produit");
+var btn_modif = document.getElementsByClassName("modal_modif");
+for(i=0; i<btn_modif.length; i++){
+  btn_modif[i].onclick = function() {
+    modal_modif.style.display = "block";
   }
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
 }
+
+var modal_ajout = document.getElementById("modal_ajouter_produit");
+var btn_ajout = document.getElementById("bouton_ajouter");
+btn_ajout.onclick = function() {
+  modal_ajout.style.display = "block";
+}
+
+var span_ajout = document.getElementsByClassName("close")[0];
+var span_modif = document.getElementsByClassName("close")[1];
+
+span_ajout.onclick = function() {
+  modal_ajout.style.display = "none";
+}
+
+span_modif.onclick = function() {
+  modal_modif.style.display = "none";
+}
+
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal_ajout.style.display = "none";
+    modal_modif.style.display = "none";
   }
-}
-
-var modal = document.getElementById("modal_ajouter_produit");
-var btn = document.getElementById("bouton_ajouter");
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-modal.style.display = "none";
-}
-window.onclick = function(event) {
-if (event.target == modal) {
-  modal.style.display = "none";
-}
 }
 
 $(document).ready( function () {
