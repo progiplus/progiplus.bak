@@ -30,7 +30,7 @@ class ligneFacture
         }
         if(!$this->setProduit($produit))
         {
-            throw new Exception("LigneFacture : produit incorrecte!");
+            throw new Exception("LigneFacture : produit incorrect!");
         }
     }
     
