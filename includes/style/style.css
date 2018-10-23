@@ -89,10 +89,23 @@ h1
 	text-align:center;
 }
 
+#bouton_ajouter
+{
+	position:relative;
+	top:-280px;
+	width:20%;
+	margin-left: 55%;
+  margin-right: auto;
+}
+
 .dataTables_wrapper
 {
 	position:relative;
 	top:-260px;
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+  margin-right: auto;
 }
 
 #table_produits_length,#table_produits_filter,#table_produits_info,#table_produits_previous,#table_produits_next
@@ -101,7 +114,7 @@ h1
 }
 
 /* The Modal (background) */
-#modal_modif_produit
+#modal_modif_produit,#modal_ajouter_produit
 {
   display: none;
   position: fixed;
