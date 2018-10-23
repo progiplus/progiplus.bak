@@ -9,6 +9,8 @@
 
 <body>
 
+<?php include('./nav.php'); ?>
+
 <h1>Liste des Produits</h1>
 
 <table id="table_clients" class="display">
