@@ -91,6 +91,10 @@ h1
 {
 	position:relative;
 	top:-260px;
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+  margin-right: auto;
 }
 
 #table_produits_length,#table_produits_filter,#table_produits_info,#table_produits_previous,#table_produits_next
