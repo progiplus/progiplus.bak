@@ -8,19 +8,19 @@ class CategorieProduit
     
     public function __construct($id, $libelle, $catParent)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuÃ© l'action ou non
+        // On lÃ¨ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("Catégorie-Produit : id incorrect!");
+            throw new Exception("CatÃ©gorie-Produit : id incorrect!");
         }
         if(!$this->setLibelle($libelle))
         {
-            throw new Exception("Catégorie-Produit : libellé incorrect!");
+            throw new Exception("CatÃ©gorie-Produit : libellÃ© incorrect!");
         }
         if(!$this->setCatParent($catParent))
         {
-            throw new Exception("Catégorie-Produit : catégorie parente incorrecte!");
+            throw new Exception("CatÃ©gorie-Produit : catÃ©gorie parente incorrecte!");
         }
     }
     
