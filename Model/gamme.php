@@ -8,15 +8,15 @@ class Gamme
     
     public function __construct($id, $libelle, $marque)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuÃ© l'action ou non
+        // On lÃ¨ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
             throw new Exception("Gamme : id incorrect!");
         }
         if(!$this->setLibelle($libelle))
         {
-            throw new Exception("Gamme : libellé incorrect!");
+            throw new Exception("Gamme : libellÃ© incorrect!");
         }
         if(!$this->setMarque($marque))
         {
@@ -68,8 +68,6 @@ class Gamme
         }
         return $ok;
     }
-    
-    
 }
 
 ?>
