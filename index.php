@@ -6,6 +6,9 @@
 			<link rel="stylesheet" href="includes/style/style.css"/>
 	</head>
     <body>
-        <?php include('./nav.php'); ?>
+        <div class="contener">
+            <?php include('./nav.php'); ?>
+        </div>
+       
     </body>
 </html>
