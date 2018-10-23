@@ -15,7 +15,7 @@ class Produit
         // On l�ve une exception si un setter renvoit faux.
         if(!$this->setReference($ref))
         {
-            throw new Exception("Produit : id incorrect!");
+            throw new Exception("Produit : référence incorrect!");
         }
         if(!$this->setDesignation($designation))
         {
@@ -79,12 +79,12 @@ class Produit
         return $ok;
     }
     
-    public function setDesignation($libelle)
+    public function setDesignation($designation)
     {
-        $ok = is_string($libelle);
+        $ok = is_string($designation);
         if($ok)
         {
-            $this->_designation = $libelle;
+            $this->_designation = $designation;
         }
         return $ok;
     }
