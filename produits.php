@@ -13,6 +13,23 @@
 
 <h1>Liste des Produits</h1>
 
+<div id="modal_ajouter_produit" class="modal">
+  <div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Ajouter un produit</h2>
+  </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+       <button type="button">Valider</button>
+       <button type="button">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<button id="bouton_ajouter" type="button">Ajouter un nouveau produit</button>
+
 <div id="modal_modif_produit" class="modal">
   <div class="modal-content">
   <div class="modal-header">
@@ -23,11 +40,10 @@
       <p>Some text in the Modal Body</p>
       <p>Some other text...</p>
        <button type="button">Valider</button>
+       <button type="button">Annuler</button>
     </div>
   </div>
 </div>
-
-<button id="bouton_ajouter" type="button">Ajouter un nouveau produit</button>
 
 <table id="table_produits" class="display">
   <thead>
@@ -75,17 +91,32 @@
         modal.style.display = "block";
     }
   }
-
 var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {
   modal.style.display = "none";
 }
-
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+var modal = document.getElementById("modal_ajouter_produit");
+var btn = document.getElementById("bouton_ajouter");
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+modal.style.display = "none";
+}
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
 }
 
 $(document).ready( function () {

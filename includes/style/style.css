@@ -112,7 +112,7 @@ h1
 }
 
 /* The Modal (background) */
-#modal_modif_produit
+#modal_modif_produit,#modal_ajouter_produit
 {
   display: none;
   position: fixed;
