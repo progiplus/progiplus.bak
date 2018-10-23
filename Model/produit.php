@@ -11,15 +11,15 @@ class Produit
     
     public function __construct($ref, $designation, $prixUnit, $actif, $catProduit, $gamme)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuÃ© l'action ou non
+        // On lï¿½ve une exception si un setter renvoit faux.
         if(!$this->setReference($ref))
         {
             throw new Exception("Produit : id incorrect!");
         }
         if(!$this->setDesignation($designation))
         {
-            throw new Exception("Produit : désignation incorrecte!");
+            throw new Exception("Produit : dÃ©signation incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnit))
         {
@@ -35,7 +35,7 @@ class Produit
         }
         if(!$this->setCatProduit($catProduit))
         {
-            throw new Exception("Produit : catégorie-produit incorrect!");
+            throw new Exception("Produit : catÃ©gorie-produit incorrect!");
         }
     }
     
@@ -71,7 +71,7 @@ class Produit
     
     public function setReference($id)
     {
-        $ok = is_int($id);
+        $ok = is_string($id);
         if($ok)
         {
             $this->_reference = $id;

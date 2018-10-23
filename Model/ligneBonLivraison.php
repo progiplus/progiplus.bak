@@ -20,7 +20,7 @@ class ligneBonLivraison
         }
         if(!$this->setProduit($produit))
         {
-            throw new Exception("LigneBonLivraison : produit incorrecte!");
+            throw new Exception("LigneBonLivraison : produit incorrect!");
         }
     }
     
