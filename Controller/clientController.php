@@ -24,7 +24,7 @@ class clientController extends abstractController
 
     public function verifClient()
     {
-        // TODO appeler la méthode static de verif client pour vérifier qu'il est ok
+        // TODO essayer d'instancier un client
         return false;
     }
 
@@ -40,7 +40,7 @@ class clientController extends abstractController
 
     public function verifContact()
     {
-        // TODO appeler la méthode static de verif client pour vérifier qu'il est ok
+        // TODO essayer d'instancier un contact
         return false;
     }
 
@@ -56,7 +56,7 @@ class clientController extends abstractController
 
     public function verifMoyenComm()
     {
-        // TODO appeler la méthode static de verif client pour vérifier qu'il est ok
+        // TODO essayer d'instancier un moyen comm
         return false;
     }
 
@@ -72,7 +72,7 @@ class clientController extends abstractController
 
     public function verifTypeMoyenComm()
     {
-        // TODO appeler la méthode static de verif client pour vérifier qu'il est ok
+        // TODO essayer d'instancier un type moyen comm
         return false;
     }
 }

@@ -1,6 +1,9 @@
 <?php
 
-echo main();
+include '../Model/model.php';
+include 'abstractController.php';
+include 'clientController.php';
+include 'produitController.php';
 
 function main()
 {
@@ -15,8 +18,10 @@ function main()
             $result = new produitController();
             break;
         default:
-            $result = "Erreur de lien";
+            return $result = "Erreur de lien"; // accueil du site
             break;
     }
-    return $result;
+    return $result->menu();
 }
+
+echo main();

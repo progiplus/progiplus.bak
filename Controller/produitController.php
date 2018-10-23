@@ -18,6 +18,8 @@ class produitController extends abstractController
             case "ajouterMarque":
                 return $this->ajouterMarque();
                 break;
+            default:
+                return "Pas d'action ".$action." dans le contrôleur ".get_class($this);
         }
     }
 
@@ -33,7 +35,7 @@ class produitController extends abstractController
 
     public function verifProduit()
     {
-        // TODO appeler la méthode static de verif produit pour vérifier qu'il est ok
+        // TODO essayer d'instancier un produit
         return false;
     }
 
@@ -49,7 +51,7 @@ class produitController extends abstractController
 
     public function verifCatProduit()
     {
-        // TODO appeler la méthode static de verif cat produit pour vérifier qu'il est ok
+        // TODO essayer d'instancier une categorieProduit
         return false;
     }
 
@@ -65,23 +67,32 @@ class produitController extends abstractController
 
     public function verifGamme()
     {
-        // TODO appeler la méthode static de gamme pour vérifier qu'il est ok
+        // TODO essayer d'instancier une gamme
         return false;
     }
 
     public function ajouterMarque()
     {
-        $ok = $this->verifMarque();
-        if($ok)
+        $marque = $this->verifMarque();
+        if($marque instanceof Marque)
         {
-            // TODO appeler bdd et essayer d'ajouter la marque. Si ajouté, ok = vrai, sinon, ok = faux
+            $marque = true;
+            // TODO appeler bdd et essayer d'ajouter la marque. Si ajouté, vrai, sinon, message d'erreur
         }
-        return $ok;
+        return $marque;
     }
 
     public function verifMarque()
     {
-        // TODO appeler la méthode static de marque pour vérifier qu'il est ok
-        return false;
+        $nom = $_POST['nomMarque'];
+        try
+        {
+            $marque = new Marque(1, $nom);
+            return $marque;
+        }
+        catch(Exception $e)
+        {
+            return $e;
+        }
     }
 }
