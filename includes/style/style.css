@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-
+/* ===== GENERAL ===== */
 body{
 	max-width: 960px;
 	margin-left: auto;
@@ -8,6 +7,8 @@ body{
 	text-align:centre;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ===== NAVIGATION ===== */
 #menu ul {
  list-style-type: none;
     margin:0;
@@ -56,8 +57,8 @@ text-align:center;
  height:30px;
  margin:10px 0 10px 0;
  }
- 
-=======
+
+
 table
 {
   border-collapse: collapse;
@@ -85,7 +86,6 @@ tr:nth-child(even)
 {
   background-color: #f2f2f2;
 }
-<<<<<<< HEAD
 
 /* The Modal (background) */
 .modal_modif_client {
@@ -142,6 +142,3 @@ tr:nth-child(even)
   background-color: #5cb85c;
   color: white;
 }
-=======
->>>>>>> a04f0c0c162f0aee952c5992da68e2e27c6be5be
->>>>>>> efc7838174587791bc43dc11c0c709249267706d
