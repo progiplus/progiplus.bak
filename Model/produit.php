@@ -71,7 +71,7 @@ class Produit
     
     public function setReference($id)
     {
-        $ok = is_int($id);
+        $ok = is_string($id);
         if($ok)
         {
             $this->_reference = $id;
