@@ -40,7 +40,7 @@ class Ville
 
     public function setId($id)
     {
-        $ok = is_numeric($id);
+        $ok = is_int($id);
         if($ok)
         {
             $this->_id = $id;
