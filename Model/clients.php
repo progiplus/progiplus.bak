@@ -9,15 +9,15 @@ class Client{
     public function __construct($id, $codeClient, $raisonSociale){
 
       if(!$this->setId($id)){
-          throw new Exception("Gamme : id incorrect!");
+          throw new Exception("Client : id incorrect!");
       }
 
       if(!$this->setCodeClient($codeClient)){
-          throw new Exception("Gamme : code client incorrect!");
+          throw new Exception("Client : code client incorrect!");
       }
 
       if(!$this->setRaisonSociale($raisonSociale)){
-          throw new Exception("Gamme : raison sociale incorrecte!");
+          throw new Exception("Client : raison sociale incorrecte!");
       }
     }
 
@@ -42,7 +42,7 @@ class Client{
     }
 
     public function setCodeClient($codeClient){
-      $ok = is_int($codeClient);
+      $ok = is_string($codeClient);
       if($ok){
         $this->_codeClient = $codeClient;
       }
