@@ -20,11 +20,16 @@ function main()
             break;
         case null:
         default:
-            require("accueil.php"); // plutôt accueil du site
+            afficherPage("Accueil", "accueil.php"); // plutôt accueil du site
             return null;
             break;
     }
     return $controller->menu($action);
+}
+
+function afficherPage($title, $chemin)
+{
+    return require("View/template.php");
 }
 
 echo main();
