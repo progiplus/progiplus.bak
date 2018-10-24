@@ -10,15 +10,15 @@ class ligneDevis
     
     public function __construct($id, $produit, $quantite, $prixUnitaire, $tva)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuÃ© l'action ou non
+        // On lÃ¨ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
             throw new Exception("LigneDevis : id incorrect!");
         }
         if(!$this->setQuantite($quantite))
         {
-            throw new Exception("LigneDevis : quantité incorrecte!");
+            throw new Exception("LigneDevis : quantitÃ© incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnitaire))
         {
