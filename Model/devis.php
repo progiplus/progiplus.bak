@@ -26,10 +26,6 @@ class Devis
             throw new Exception("Devis : Client incorrect!");
         }
     }
-
-
-
-
     public function getId()
     {
         return $this->_id;
