@@ -12,9 +12,6 @@
         url: "../Controller/main.php?page=produit&action=ajouterMarque",
         data: { nomMarque : "marquetest"}
     }).done(function( msg ) {
-        document.write( "Data Saved: " + msg );
+        document.write(msg);
     });
 </script>
-
-<?php
-

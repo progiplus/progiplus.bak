@@ -13,6 +13,23 @@
 
 <h1>Liste des Produits</h1>
 
+<div id="modal_ajouter_produit" class="modal">
+  <div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Ajouter un produit</h2>
+  </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+       <button type="button">Valider</button>
+       <button type="button">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<button id="bouton_ajouter" type="button">Ajouter un nouveau produit</button>
+
 <div id="modal_modif_produit" class="modal">
   <div class="modal-content">
   <div class="modal-header">
@@ -22,6 +39,8 @@
     <div class="modal-body">
       <p>Some text in the Modal Body</p>
       <p>Some other text...</p>
+       <button type="button">Valider</button>
+       <button type="button">Annuler</button>
     </div>
   </div>
 </div>
@@ -65,29 +84,67 @@
 
 <script type="text/javascript">
 
-  var modal = document.getElementById("modal_modif_produit");
-  var btn = document.getElementsByClassName("modal_modif");
-  for(i=0; i<btn.length; i++){
-    btn[i].onclick = function() {
-        modal.style.display = "block";
-    }
+var modal_modif = document.getElementById("modal_modif_produit");
+var btn_modif = document.getElementsByClassName("modal_modif");
+for(i=0; i<btn_modif.length; i++){
+  btn_modif[i].onclick = function() {
+    modal_modif.style.display = "block";
   }
+}
 
-var span = document.getElementsByClassName("close")[0];
+var modal_ajout = document.getElementById("modal_ajouter_produit");
+var btn_ajout = document.getElementById("bouton_ajouter");
+btn_ajout.onclick = function() {
+  modal_ajout.style.display = "block";
+}
 
-span.onclick = function() {
-  modal.style.display = "none";
+var span_ajout = document.getElementsByClassName("close")[0];
+var span_modif = document.getElementsByClassName("close")[1];
+
+span_ajout.onclick = function() {
+  modal_ajout.style.display = "none";
+}
+
+span_modif.onclick = function() {
+  modal_modif.style.display = "none";
 }
 
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal_ajout.style.display = "none";
+    modal_modif.style.display = "none";
   }
 }
 
 $(document).ready( function () {
   $('#table_produits').DataTable();
 } );
+
+$('#table_produits').DataTable( {
+    language: {
+        processing:     "Traitement en cours...",
+        search:         "Rechercher&nbsp;:",
+        lengthMenu:    "Afficher _MENU_ &eacute;l&eacute;ments",
+        info:           "Affichage de l'&eacute;lement _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        infoEmpty:      "Affichage de l'&eacute;lement 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        infoFiltered:   "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        infoPostFix:    "",
+        loadingRecords: "Chargement en cours...",
+        zeroRecords:    "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        emptyTable:     "Aucune donnée disponible dans le tableau",
+        paginate: {
+            first:      "Premier",
+            previous:   "Pr&eacute;c&eacute;dent",
+            next:       "Suivant",
+            last:       "Dernier"
+        },
+        aria: {
+            sortAscending:  ": activer pour trier la colonne par ordre croissant",
+            sortDescending: ": activer pour trier la colonne par ordre décroissant"
+        }
+    }
+} );
+
 </script>
 
 </body>
