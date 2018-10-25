@@ -1,11 +1,11 @@
 <?php
-/* à inclure dans les contrôleurs */
+/* Ã  inclure dans les contrÃ´leurs */
 class Database
 {
     private static $hote = 'localhost' ;
     private static $bdd = 'progiplus';
     private static $dbUser = 'root';
-    private static $mdpBdd = 'Rugbyman47' ;
+    private static $mdpBdd = '' ;
     
     private static $pdo = null;
     
