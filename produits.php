@@ -26,12 +26,13 @@
 
         <p><label for="marque_produit">Marque :</label>
         <select name="marque_produit" id="marque_produit">
-          <option value="none">--</option>
+          <option value="0" id="no">--</option>
+          <option value="1" id="ok">Nouveau</option>
         </select></p>
 
         <p><label for="gamme_produit">Gamme :</label>
         <select name="gamme_produit" id="gamme_produit">
-          <option value="none">--</option>
+          <option value="0">--</option>
         </select></p>
 
         <p><label for="référence_produit">Référence :</label>
@@ -42,7 +43,7 @@
 
         <p><label for="tva_produit">TVA :</label>
         <select name="tva_produit" id="tva_produit">
-          <option value="none">--</option>
+          <option value="0">--</option>
         </select></p>
 
         <p><label for="quantité_produit">Quantité :</label>
@@ -144,6 +145,14 @@ window.onclick = function(event) {
     modal_modif.style.display = "none";
   }
 }
+
+function foncAjoutMarque(){
+  if (document.getElementById("marque_produit").checked) {
+          document.getElementById("ok").style.display = "block";
+      } else {
+          document.getElementById("ok").style.display = "none";
+      }
+  }
 
 $(document).ready( function () {
   $('#table_produits').DataTable();
