@@ -27,7 +27,9 @@ function main()
     return $controller->menu($action);
 }
 
-function afficherPage($title, $chemin, $data)
+
+function afficherPage($title, $chemin, $data=null)
+
 {
     require("View/template.php");
     return "";

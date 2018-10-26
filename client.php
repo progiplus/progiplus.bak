@@ -1,6 +1,44 @@
 <section>
     <h1>Annuaire Client <button>Ajouter client</button></h1>
 
+<head>
+	<link rel="stylesheet" type="text/css" href="includes/style/style.css" >
+	<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
+	<title> Progiplus-client</title>
+	</head>
+<nav>
+
+</nav>
+
+
+<body>
+    <?php include('./nav.php'); ?>
+	<h1>Annuaire Client</h1>
+
+	<!-- version vanilla <table >
+
+		<tr>
+			<th>Code client</th>
+			<th>raison sociale</th>
+			<th>Nom contact</th>
+			<th>prenom de contact</th>
+			<th>service de contact</th>
+			<th>moyenn de communication</th>
+			<th>Actions</th>
+
+			</tr>
+			<td>---</td>
+			<td>---</td>
+			<td>---</td>
+			<td>---</td>
+			<td>---</td>
+			<td>---</td>
+			<td><a href="***"><img src="./assets/pencil.png" title="Modifier Profil client" alt="bouton_modifier" height="20"/></a>
+               <a href="***"><img src="./assets/cancel.png" title="Supprimer Profil client" alt="bouton_supprimer" height="20"/></a></td>
+		</td>
+	</table> -->
+
+    
     <table id="table_client" class="display">
         <thead>
             <tr>
@@ -14,7 +52,10 @@
         </thead>
     <tbody>
     <?php 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 051ba7929ed56a1c11c6ce68b5201cb4d66cb25c
         while($clients = $data->fetch())
         {
             echo '<tr>';
@@ -33,6 +74,7 @@
     ?>
         </tbody>
     </table>
+<<<<<<< HEAD
 
 </section>
 <script type="text/javascript"  src="includes/scripts/jquery-3.3.1.min.js"></script>
@@ -44,3 +86,16 @@
         } );
 </script>
 
+=======
+    
+    <script type="text/javascript"  src="includes/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript"  src="includes/scripts/datatables.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#table_client').DataTable();
+            } );
+    </script>
+
+</body>
+>>>>>>> 051ba7929ed56a1c11c6ce68b5201cb4d66cb25c
