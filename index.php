@@ -29,7 +29,8 @@ function main()
 
 function afficherPage($title, $chemin)
 {
-    return require("View/template.php");
+    require("View/template.php");
+    return "";
 }
 
 echo main();
