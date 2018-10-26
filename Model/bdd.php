@@ -1,16 +1,31 @@
 <?php
-/* à inclure dans les contrôleurs */
-
-$host = '127.0.0.1';
-$db   = 'progiplus';
-$user = 'root';
-$pass = '';
-$charset = 'utf8';
-
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$opt = [
-    \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
-    \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
-    \PDO::ATTR_EMULATE_PREPARES   => false,
-];
-$pdo = new \PDO($dsn, $user, $pass, $opt);
+/* Ã  inclure dans les contrÃ´leurs */
+class Database
+{
+    private static $hote = 'localhost' ;
+    private static $bdd = 'progiplus';
+    private static $dbUser = 'root';
+    private static $mdpBdd = 'Rugbyman47' ;
+    
+    private static $pdo = null;
+    
+    public static function connect()
+    {
+        try
+        {
+            self::$pdo = new PDO('mysql:host=' . self::$hote. ';dbname=' . self::$bdd,self::$dbUser,self::$mdpBdd);
+        }
+        catch (PDOException $e)
+        {
+            die($e-> getMessage());
+            exit();
+        }
+        return self::$pdo;
+    }
+    
+    public static function disconnect()
+    {
+        self::$pdo = null;
+    } 
+}
+?>

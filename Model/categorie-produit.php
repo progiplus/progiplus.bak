@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class CategorieProduit
 {
     private $_id;

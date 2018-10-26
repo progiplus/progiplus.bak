@@ -13,11 +13,11 @@ class MoyenComm
             }
         if(!$this->setCoordonnees($coordonnees));
             {
-            throw new Exeption("MoyenCom : coordonees incorrect!");
+            throw new Exception("MoyenCom : coordonees incorrect!");
             }
         if(!$this->setTypeMoyenCom($typeMoyenCom));
             {
-            throw new Exeption("MoyenCom : typeMoyenCom incorrect!");
+            throw new Exception("MoyenCom : typeMoyenCom incorrect!");
             }
             
     }
@@ -26,13 +26,11 @@ class MoyenComm
         return $this->_id_moyenCom;
     }
     public function getCoordonnees(){
-        return $this->_coordonnees;
+        return $this->$_coordonees;
     }
-    {
-        public function getTypeMoyenCom(){
-            return $this->_typeMoyenCom;
-        }
-    }
+	public function getTypeMoyenCom(){
+		return $this->_typeMoyenCom;
+	}
     
     
     public function setId($id_moyenCom)
@@ -67,4 +65,4 @@ class MoyenComm
     }
 }
     
-php>
+?>

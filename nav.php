@@ -1,5 +1,5 @@
-<?php 
-    $svgLoupe = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250.313 250.313">
+<?php
+$svgLoupe = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250.313 250.313">
             <g id="Search">
                 <path d="M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76
                     c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911
@@ -9,8 +9,7 @@
                     C170.146,140.044,140.043,170.146,102.911,170.146z"/>
             </g>
             </svg>';
-
-    $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+$svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" xml:space="preserve"><g>
 		<path d="M131.5,472H60.693c-8.538,0-13.689-4.765-15.999-7.606c-3.988-4.906-5.533-11.29-4.236-17.519
 			c20.769-99.761,108.809-172.616,210.445-174.98c1.693,0.063,3.39,0.105,5.097,0.105c1.722,0,3.434-0.043,5.142-0.107
@@ -36,27 +35,27 @@
 ?>
 
 
-    <div>
-        <img id="logo" src="includes/media/logo.png" width="200px">
-    </div>
-    <nav>
+<div>
+    <img id="logo" src="includes/media/logo.png" width="200px">
+</div>
+<nav>
     <div id="identification">
         <div id="icone-man">
-            <?php echo $svgLogin ?>
+			<?php echo $svgLogin ?>
         </div>
-        
+
     </div>
-    
-    
-   <div id="form">
-       <form>
-       <div id="input-rechercher" >
-           <input type="text" placeholder="Rechercher..">
-       </div>
-        
-       <button id="button-search" type="submit">
-            <?php echo $svgLoupe ?>
-        </button>
+
+
+    <div id="form">
+        <form>
+            <div id="input-rechercher" >
+                <input type="text" placeholder="Rechercher..">
+            </div>
+
+            <button id="button-search" type="submit">
+				<?php echo $svgLoupe ?>
+            </button>
         </form>
     </div>
     <div id="menu">
