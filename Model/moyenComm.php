@@ -1,0 +1,70 @@
+<?php
+class MoyenComm
+{
+    private $_id_moyenCom;
+    private $_coordonees;
+    private $_typeMoyenCom;
+    
+    public function __construct($id_moyenCom, $coordonnees, $typeMoyenCom)
+    {
+        if(!$this->setId($id_moyenCom));
+            {
+            throw new Exception("MoyenComm : id incorrect!");
+            }
+        if(!$this->setCoordonnees($coordonnees));
+            {
+            throw new Exeption("MoyenCom : coordonees incorrect!");
+            }
+        if(!$this->setTypeMoyenCom($typeMoyenCom));
+            {
+            throw new Exeption("MoyenCom : typeMoyenCom incorrect!");
+            }
+            
+    }
+    public function getId()
+    {
+        return $this->_id_moyenCom;
+    }
+    public function getCoordonnees(){
+        return $this->_coordonnees;
+    }
+    {
+        public function getTypeMoyenCom(){
+            return $this->_typeMoyenCom;
+        }
+    }
+    
+    
+    public function setId($id_moyenCom)
+    {
+        $ok = is_int($id_moyenCom);
+        if($ok)
+        {
+            $this->_id_moyenCom = $id_moyenCom;
+        }
+        return $ok;
+    }
+    public function setCoordonnees($coordonees)
+    {
+        $ok =is_string($coordonnees);
+        if($ok)
+           {
+              $this->_coordonnees = $coordonnees; 
+           }
+        return $ok;
+        
+            
+    }
+     public function setTypeMoyenCom($typeMoyenCom)
+    {
+        $ok =is_string($typeMoyanCom);
+        if($ok)
+           {
+              $this->_typeMoyenCom = $typeMoyanCom; 
+           }
+        return $ok;
+            
+    }
+}
+    
+php>
