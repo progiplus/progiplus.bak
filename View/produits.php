@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Annuaire Produits</title>
-<link rel="stylesheet" type="text/css" href="includes/style/style.css">
-<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
-<meta charset="UTF-8">
-</head>
-
-<body>
-
-<?php include('./nav.php'); ?>
-
+<section>
 <h1>Liste des Produits</h1>
 
 <div id="modal_ajouter_produit" class="modal">
@@ -184,6 +172,4 @@ $('#table_produits').DataTable( {
 } );
 
 </script>
-
-</body>
-</html>
+</section>

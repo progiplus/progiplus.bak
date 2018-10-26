@@ -3,16 +3,13 @@
 <head>
     <title><?php echo $title ?></title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="includes/style/style.css"/>
-
-    <link rel="icon" href="assets/favicon.ico" />
-
-    <link rel="stylesheet" type="text/css" href="includes/style/datatables.css" >
-
+    <link rel="stylesheet" href="View/includes/style/style.css"/>
+    <link rel="icon" href="View/assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="View/includes/style/datatables.css" >
 </head>
 <body>
     <div class="wrapper">
-        <?php include('./nav.php'); ?>
+        <?php include('View/nav.php'); ?>
         <?php include($chemin); // ajout d'un ou plusieurs fichier php ?>   
     </div>
     

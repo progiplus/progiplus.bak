@@ -16,23 +16,23 @@ class ligneFacture
         // On l�ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("LigneFacture : id incorrect!");
+            throw new \Exception("LigneFacture : id incorrect!");
         }
         if(!$this->setQuantite($quantite))
         {
-            throw new Exception("LigneFacture : quantit� incorrecte!");
+            throw new \Exception("LigneFacture : quantit� incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnitaire))
         {
-            throw new Exception("LigneFacture : prix unitaire incorrect!");
+            throw new \Exception("LigneFacture : prix unitaire incorrect!");
         }
         if(!$this->setTVA($tva))
         {
-            throw new Exception("LigneFacture : tva incorrect!");
+            throw new \Exception("LigneFacture : tva incorrect!");
         }
         if(!$this->setProduit($produit))
         {
-            throw new Exception("LigneFacture : produit incorrect!");
+            throw new \Exception("LigneFacture : produit incorrect!");
         }
     }
     

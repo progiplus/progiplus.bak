@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class Gamme
 {
     private $_id;
@@ -12,15 +14,15 @@ class Gamme
         // On lève une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("Gamme : id incorrect!");
+            throw new \Exception("Gamme : id incorrect!");
         }
         if(!$this->setLibelle($libelle))
         {
-            throw new Exception("Gamme : libellé incorrect!");
+            throw new \Exception("Gamme : libellé incorrect!");
         }
         if(!$this->setMarque($marque))
         {
-            throw new Exception("Gamme : marque incorrect!");
+            throw new \Exception("Gamme : marque incorrect!");
         }
     }
     
