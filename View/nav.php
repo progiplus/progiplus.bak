@@ -34,11 +34,11 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 		<circle cx="431" cy="412" r="20"/></g></svg>';
 ?>
 
-
-<div>
-    <img id="logo" src="includes/media/logo.png" width="200px">
-</div>
 <nav>
+    <div>
+        <img id="logo" src="View/assets/logo.png" width="200px">
+    </div>
+    
     <div id="identification">
         <div id="icone-man">
 			<?php echo $svgLogin ?>
@@ -60,25 +60,19 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
     </div>
     <div id="menu">
         <ul>
-            <li><a href="#">Accueil</a></li>
-
-
-        <li><a href="#">Annuaire Client</a>
-            <ul>
-                <li><a href="#">Liste client</a></li>
-                <li><a href="#">Ajouter un client</a></li>
-                <li><a href="#">Modifier un client </a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">Produits</a>
-            <ul>
-                <li><a href="#">Liste produit</a></li>
-                <li><a href="#">Ajouter un produit</a></li>
-                <li><a href="#">Modifier un produit </a></li>
-            </ul>
-        </li>
-
+            <li><a href="">Accueil</a></li>
+            <li><a href="?page=client&action=listeClient">Annuaire Client</a>
+                <ul>
+                    <li><a href="#">Ajouter un client</a></li>
+                    <li><a href="#">Modifier un client </a></li>
+                </ul>
+            </li>
+            <li><a href="?page=produit&action=listeProduit">Liste Produit</a>
+                <ul>
+                    <li><a href="#">Ajouter un produit</a></li>
+                    <li><a href="#">Modifier un produit </a></li>
+                </ul>
+            </li>
         <li><a href="#">Devis</a>
 			<ul>
 				<li><a href="#">Nouveau devis</a></li>

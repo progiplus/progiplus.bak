@@ -1,4 +1,7 @@
 <?php
+
+namespace Model;
+
 class Adresse
 {
     private $_ligne1;
@@ -9,15 +12,15 @@ class Adresse
     {
         if (!$this->setLigne1($ligne1))
         {
-            throw new Exception("Adresse : ligne 1  incorrecte!");
+            throw new \Exception("Adresse : ligne 1  incorrecte!");
         }
         if (!$this->setLigne2($ligne2))
         {
-            throw new Exception("Adresse : ligne 2 incorrecte!");
+            throw new \Exception("Adresse : ligne 2 incorrecte!");
         }
         if (!$this->setVille($ville))
         {
-            throw new Exception("Adresse :Ville incorrecte!");
+            throw new \Exception("Adresse :Ville incorrecte!");
         }
     }
 

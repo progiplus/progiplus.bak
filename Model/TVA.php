@@ -13,11 +13,11 @@ class TVA
         // On l�ve une exception si un setter renvoit faux.
         if(!$this->setTaux($taux))
         {
-            throw new Exception("TVA : taux incorrect!");
+            throw new \Exception("TVA : taux incorrect!");
         }
         if(!$this->setActif($actif))
         {
-            throw new Exception("TVA : actif incorrect!");
+            throw new \Exception("TVA : actif incorrect!");
         }
     }
     

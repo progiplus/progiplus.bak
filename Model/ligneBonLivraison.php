@@ -14,15 +14,15 @@ class ligneBonLivraison
         // On l�ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("LigneBonLivraison : id incorrect!");
+            throw new \Exception("LigneBonLivraison : id incorrect!");
         }
         if(!$this->setQuantite($quantite))
         {
-            throw new Exception("LigneBonLivraison : quantit� incorrecte!");
+            throw new \Exception("LigneBonLivraison : quantit� incorrecte!");
         }
         if(!$this->setProduit($produit))
         {
-            throw new Exception("LigneBonLivraison : produit incorrect!");
+            throw new \Exception("LigneBonLivraison : produit incorrect!");
         }
     }
     

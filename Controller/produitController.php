@@ -18,6 +18,9 @@ class produitController extends abstractController
             case "ajouterMarque":
                 return $this->ajouterMarque();
                 break;
+			case "listeProduit":
+				$result = $this->listeProduit();
+				break;
             default:
                 return "Pas d'action ".$action." dans le contrôleur ".get_class($this);
         }
@@ -95,4 +98,9 @@ class produitController extends abstractController
             return $e;
         }
     }
+	
+	public function listeProduit()
+	{
+		return afficherPage("Liste Produit", "View/produits.php");
+	}
 }

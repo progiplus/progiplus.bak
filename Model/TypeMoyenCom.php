@@ -1,4 +1,6 @@
 <?php
+namespace Model;
+
 class TypeMoyenComm
 {
     private $_id_type_moyen_com;
@@ -9,11 +11,11 @@ class TypeMoyenComm
         
          if(!$this->setId($_id_type_moyen_com))
         {
-            throw new Exception("type_moyen_comm : id incorrect!");
+            throw new \Exception("type_moyen_comm : id incorrect!");
         }
         if(!$this->setLibelle($_libelle_type_com))
         {
-            throw new Exception("type_moyen_comm : libelle incorrect!");
+            throw new \Exception("type_moyen_comm : libelle incorrect!");
         }
     }
     public function getId()

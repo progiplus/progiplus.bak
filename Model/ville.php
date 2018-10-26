@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class Ville
 {
     private $_id;
@@ -10,15 +12,15 @@ class Ville
     {
         if(!$this->setId($id))
         {
-            throw new Exception("Ville : Id incorrect!");
+            throw new \Exception("Ville : Id incorrect!");
         }
         if(!$this->setNom($nom))
         {
-            throw new Exception("Ville : Nom incorrect");
+            throw new \Exception("Ville : Nom incorrect");
         }
         if(!$this->setCode_Postal($code_postal))
         {
-            throw new Exception("Ville : Code postal incorrect");
+            throw new \Exception("Ville : Code postal incorrect");
         }
 
     }

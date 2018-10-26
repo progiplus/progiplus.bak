@@ -13,11 +13,11 @@ class Marque
         // On l�ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("Marque : id incorrect!");
+            throw new \Exception("Marque : id incorrect!");
         }
         if(!$this->setNom($nom))
         {
-            throw new Exception("Marque : nom incorrect!");
+            throw new \Exception("Marque : nom incorrect!");
         }
     }
     

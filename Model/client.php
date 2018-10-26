@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class Client{
 
     private $_id;
@@ -9,15 +11,15 @@ class Client{
     public function __construct($id, $codeClient, $raisonSociale){
 
       if(!$this->setId($id)){
-          throw new Exception("Client : id incorrect!");
+          throw new \Exception("Client : id incorrect!");
       }
 
       if(!$this->setCodeClient($codeClient)){
-          throw new Exception("Client : code client incorrect!");
+          throw new \Exception("Client : code client incorrect!");
       }
 
       if(!$this->setRaisonSociale($raisonSociale)){
-          throw new Exception("Client : raison sociale incorrecte!");
+          throw new \Exception("Client : raison sociale incorrecte!");
       }
     }
 

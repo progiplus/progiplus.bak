@@ -1,13 +1,4 @@
 <section>
-    <h1>Annuaire Client <button>Ajouter client</button></h1>
-
-<head>
-	<link rel="stylesheet" type="text/css" href="includes/style/style.css" >
-	<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
-	<title> Progiplus-client</title>
-	</head>
-<body>
-  
 	<h1>Annuaire Client</h1>
 
 	<!-- version vanilla <table >
@@ -56,8 +47,8 @@
                 echo '<td>' . $clients['nom'] . '</td>';
                 echo '<td>' . $clients['prenom'] . '</td>';
 
-                echo '<td><a href="#"><img src="./assets/pencil.png" class="imageTableau" title="Modifier Profil client" alt="bouton_modifier"/></a>
-                   <a href="#"><img src="./assets/cancel.png" class="imageTableau" title="Supprimer Profil client" alt="bouton_supprimer"/></a>
+                echo '<td><a href="#"><img src="assets/pencil.png" class="imageTableau" title="Modifier Profil client" alt="bouton_modifier"/></a>
+                   <a href="#"><img src="assets/cancel.png" class="imageTableau" title="Supprimer Profil client" alt="bouton_supprimer"/></a>
                 </td>';
             echo '</tr>';
         }
@@ -65,19 +56,13 @@
     ?>
         </tbody>
     </table>
-
-
 </section>
-<script type="text/javascript"  src="includes/scripts/jquery-3.3.1.min.js"></script>
-<script type="text/javascript"  src="includes/scripts/datatables.js"></script>
-
-<script type="text/javascript">
-    $(document).ready( function () {
-        $('#table_client').DataTable();
-        } );
-</script>
-
-
-
-</body>
+    <script type="text/javascript"  src="includes/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript"  src="includes/scripts/datatables.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#table_client').DataTable();
+            } );
+    </script>
 

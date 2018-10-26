@@ -4,4 +4,4 @@
 .buildpath
 .project
 
-Model/bdd.php
+Bdd/mdp.php
