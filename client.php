@@ -2,12 +2,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="includes/style/style.css" >
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="includes/style/datatables.css" >
-    
-=======
 	<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
->>>>>>> elodie
 	<title> Progiplus-client</title>
 	</head>
 <nav>
@@ -58,7 +53,7 @@
 			</tr>
 <<<<<<< HEAD
     <tbody>
-			<?php 
+			<?php
 =======
 			<?php
 >>>>>>> elodie
@@ -77,9 +72,9 @@
 
 				</tr>';
             }
-        
-           
-			
+
+
+
 			?>
         </tbody>
 
@@ -91,12 +86,12 @@
      $(document).ready( function () {
             $('#table_client').DataTable();
             } );
-  
+
 
     </script>
 
-    
-    
+
+
 </body>
 
 <footer></footer>
