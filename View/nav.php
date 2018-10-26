@@ -34,20 +34,13 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 		<circle cx="431" cy="412" r="20"/></g></svg>';
 ?>
 
-<<<<<<< HEAD:nav.php
 
-
-<nav>
-   	<div>
-    	<img id="logo" src="includes/media/logo.png" width="200px">
-	</div>
-=======
 <nav>
     <div>
         <img id="logo" src="View/assets/logo.png" width="200px">
     </div>
     
->>>>>>> b155de566beccd139561ca3fe066d146a03fc3ad:View/nav.php
+
     <div id="identification">
         <div id="icone-man">
 			<?php echo $svgLogin ?>
