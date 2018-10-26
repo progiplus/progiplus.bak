@@ -61,9 +61,9 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="">Accueil</a></li>
 
-            <li><a href="#">Annuaire Client</a>
+            <li><a href="?page=client&action=listeClient">Annuaire Client</a>
                 <ul>
                     <li><a href="#">Ajouter un client</a></li>
                     <li><a href="#">Modifier un client </a></li>
