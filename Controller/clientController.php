@@ -102,6 +102,6 @@ class clientController extends abstractController
             INNER JOIN civilite ON contact.id_civilite = civilite.id_civilite');
 
        
-        return afficherPage("liste client", "client.php", $statement);
+        return afficherPage("liste client", "View/client.php", $statement);
     }
 }

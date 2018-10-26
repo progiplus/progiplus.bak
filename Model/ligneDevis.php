@@ -16,23 +16,23 @@ class ligneDevis
         // On lève une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("LigneDevis : id incorrect!");
+            throw new \Exception("LigneDevis : id incorrect!");
         }
         if(!$this->setQuantite($quantite))
         {
-            throw new Exception("LigneDevis : quantité incorrecte!");
+            throw new \Exception("LigneDevis : quantité incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnitaire))
         {
-            throw new Exception("LigneDevis : prix unitaire incorrect!");
+            throw new \Exception("LigneDevis : prix unitaire incorrect!");
         }
         if(!$this->setTVA($tva))
         {
-            throw new Exception("LigneDevis : tva incorrect!");
+            throw new \Exception("LigneDevis : tva incorrect!");
         }
         if(!$this->setProduit($produit))
         {
-            throw new Exception("LigneDevis : produit incorrect!");
+            throw new \Exception("LigneDevis : produit incorrect!");
         }
     }
     

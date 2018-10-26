@@ -1,4 +1,7 @@
 <?php
+
+namespace Model;
+
 class MoyenComm
 {
     private $_id_moyenCom;
@@ -7,18 +10,18 @@ class MoyenComm
     
     public function __construct($id_moyenCom, $coordonnees, $typeMoyenCom)
     {
-        if(!$this->setId($id_moyenCom));
-            {
-            throw new Exception("MoyenComm : id incorrect!");
-            }
-        if(!$this->setCoordonnees($coordonnees));
-            {
-            throw new Exception("MoyenCom : coordonees incorrect!");
-            }
-        if(!$this->setTypeMoyenCom($typeMoyenCom));
-            {
-            throw new Exception("MoyenCom : typeMoyenCom incorrect!");
-            }
+        if(!$this->setId($id_moyenCom))
+        {
+            throw new \Exception("MoyenComm : id incorrect!");
+        }
+        if(!$this->setCoordonnees($coordonnees))
+        {
+            throw new \Exception("MoyenCom : coordonees incorrect!");
+        }
+        if(!$this->setTypeMoyenCom($typeMoyenCom))
+        {
+            throw new \Exception("MoyenCom : typeMoyenCom incorrect!");
+        }
             
     }
     public function getId()
@@ -26,7 +29,7 @@ class MoyenComm
         return $this->_id_moyenCom;
     }
     public function getCoordonnees(){
-        return $this->$_coordonees;
+        return $this->_coordonees;
     }
 	public function getTypeMoyenCom(){
 		return $this->_typeMoyenCom;
@@ -44,10 +47,10 @@ class MoyenComm
     }
     public function setCoordonnees($coordonees)
     {
-        $ok =is_string($coordonnees);
+        $ok =is_string($coordonees);
         if($ok)
            {
-              $this->_coordonnees = $coordonnees; 
+              $this->_coordonees = $coordonees;
            }
         return $ok;
         
@@ -55,10 +58,10 @@ class MoyenComm
     }
      public function setTypeMoyenCom($typeMoyenCom)
     {
-        $ok =is_string($typeMoyanCom);
+        $ok =is_string($typeMoyenCom);
         if($ok)
            {
-              $this->_typeMoyenCom = $typeMoyanCom; 
+              $this->_typeMoyenCom = $typeMoyenCom;
            }
         return $ok;
             

@@ -36,7 +36,7 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 
 <nav>
     <div>
-        <img id="logo" src="includes/media/logo.png" width="200px">
+        <img id="logo" src="View/assets/logo.png" width="200px">
     </div>
     
     <div id="identification">
@@ -76,7 +76,7 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
                 </ul>
             </li>
 
-            <li><a href="#">Liste Produit</a>
+            <li><a href="?page=produit&action=listeProduit">Liste Produit</a>
                 <ul>
                     <li><a href="#">Ajouter un produit</a></li>
                     <li><a href="#">Modifier un produit </a></li>
