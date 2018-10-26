@@ -1,17 +1,4 @@
 <section>
-    <h1>Annuaire Client <button>Ajouter client</button></h1>
-<head>
-	<link rel="stylesheet" type="text/css" href="includes/style/style.css" >
-	<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
-	<title> Progiplus-client</title>
-	</head>
-<nav>
-
-</nav>
-
-
-<body>
-    <?php include('./nav.php'); ?>
 	<h1>Annuaire Client</h1>
 
 	<!-- version vanilla <table >
@@ -78,5 +65,3 @@
             $('#table_client').DataTable();
             } );
     </script>
-
-</body>

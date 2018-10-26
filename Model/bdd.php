@@ -1,11 +1,12 @@
 <?php
+
+require_once('Bdd/mdp.php'); // créé la variable $MDPBDD, à l'abri de git. Syntaxe : define("MDPBDD", "root");
 /* à inclure dans les contrôleurs */
 class Database
 {
     private static $hote = 'localhost' ;
     private static $bdd = 'progiplus';
     private static $dbUser = 'root';
-    private static $mdpBdd = 'Rugbyman47' ;
     
     private static $pdo = null;
     
@@ -13,7 +14,7 @@ class Database
     {
         try
         {
-            self::$pdo = new PDO('mysql:host=' . self::$hote. ';dbname=' . self::$bdd,self::$dbUser,self::$mdpBdd);
+            self::$pdo = new PDO('mysql:host=' . self::$hote. ';dbname=' . self::$bdd,self::$dbUser,MDPBDD);
         }
         catch (PDOException $e)
         {
