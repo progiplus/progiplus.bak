@@ -6,13 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
 	<title> Progiplus-client</title>
 	</head>
-<nav>
-
-</nav>
-
-
 <body>
-    <?php include('./nav.php'); ?>
+  
 	<h1>Annuaire Client</h1>
 
 	<!-- version vanilla <table >
@@ -52,10 +47,6 @@
         </thead>
     <tbody>
     <?php 
-<<<<<<< HEAD
-
-=======
->>>>>>> 051ba7929ed56a1c11c6ce68b5201cb4d66cb25c
         while($clients = $data->fetch())
         {
             echo '<tr>';
@@ -74,7 +65,7 @@
     ?>
         </tbody>
     </table>
-<<<<<<< HEAD
+
 
 </section>
 <script type="text/javascript"  src="includes/scripts/jquery-3.3.1.min.js"></script>
@@ -86,16 +77,7 @@
         } );
 </script>
 
-=======
-    
-    <script type="text/javascript"  src="includes/scripts/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript"  src="includes/scripts/datatables.js"></script>
-    
-    <script type="text/javascript">
-        $(document).ready( function () {
-            $('#table_client').DataTable();
-            } );
-    </script>
+
 
 </body>
->>>>>>> 051ba7929ed56a1c11c6ce68b5201cb4d66cb25c
+
