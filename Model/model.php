@@ -1,5 +1,5 @@
 <?php
-// require_once 'bdd.php'; // TODO seul PDO en global, fonction init pour l'instancier
+require_once 'bdd.php'; // TODO seul PDO en global, fonction init pour l'instancier
 require_once 'categorie-produit.php';
 require_once 'gamme.php';
 require_once 'marque.php';

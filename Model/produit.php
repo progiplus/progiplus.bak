@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class Produit
 {
     private $_reference;

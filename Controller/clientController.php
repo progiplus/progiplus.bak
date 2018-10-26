@@ -94,6 +94,14 @@ class clientController extends abstractController
 
     public function listeClient()
     {
-        return afficherPage("liste client", "client.php");
+        $db = Database::connect();
+        $statement = $db->query(' 
+            SELECT client.code_client,client.raison_sociale,civilite.libelle,contact.nom,contact.prenom,contact.service
+            FROM contact
+            INNER JOIN client ON client.id_client = contact.id_client
+            INNER JOIN civilite ON contact.id_civilite = civilite.id_civilite');
+
+       
+        return afficherPage("liste client", "client.php", $statement);
     }
 }

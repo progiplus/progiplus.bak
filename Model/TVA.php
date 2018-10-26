@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class TVA
 {
     private $_taux;
@@ -7,8 +9,8 @@ class TVA
     
     public function __construct($taux, $actif)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuï¿½ l'action ou non
+        // On lï¿½ve une exception si un setter renvoit faux.
         if(!$this->setTaux($taux))
         {
             throw new Exception("TVA : taux incorrect!");
