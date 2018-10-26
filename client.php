@@ -1,5 +1,3 @@
-<section>
-    <h1>Annuaire Client <button>Ajouter client</button></h1>
 
 <head>
 	<link rel="stylesheet" type="text/css" href="includes/style/style.css" >
@@ -7,7 +5,7 @@
 	<title> Progiplus-client</title>
 	</head>
 <body>
-  
+  <section>
 	<h1>Annuaire Client</h1>
 
 	<!-- version vanilla <table >

@@ -35,10 +35,11 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 ?>
 
 
-<div>
-    <img id="logo" src="includes/media/logo.png" width="200px">
-</div>
+
 <nav>
+   	<div>
+    	<img id="logo" src="includes/media/logo.png" width="200px">
+	</div>
     <div id="identification">
         <div id="icone-man">
 			<?php echo $svgLogin ?>

@@ -8,14 +8,11 @@
     padding:0;
 }
 
-
 body{
     width: auto;
     margin: auto;
 	max-width: 960px;
-
 	background-color:#264040;
-	/*text-align:center;*/
 	font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper{
@@ -23,7 +20,6 @@ body{
     margin: auto; 
     margin-top: 30px;
 }
-
 
 .contener
 {
@@ -34,8 +30,7 @@ body{
 nav {
     width: 200px;
     background-color: rgb(67, 112, 112);
-    height: 300px;
-    padding-top: 50px
+    padding-top: 30px
 }
 #icone-man{
     width:30px;
@@ -72,10 +67,6 @@ margin-top: 10px;
 
  
 /* ===== NAVIGATION ===== */
-#menu ul {
-    list-style-type: none;
-    margin:0;
-    padding: 0;}
 
 .wrapper{
     width: 960px;
