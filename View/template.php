@@ -4,11 +4,8 @@
     <title><?php echo $title ?></title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="includes/style/style.css"/>
-<<<<<<< HEAD
     <link rel="icon" href="assets/favicon.ico" />
-=======
     <link rel="stylesheet" type="text/css" href="includes/style/datatables.css" >
->>>>>>> bengi
 </head>
 <body>
     <div class="wrapper">
