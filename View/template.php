@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="View/includes/style/style.css"/>
     <link rel="icon" href="View/assets/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="View/includes/style/datatables.css" >
+	<script type="text/javascript"  src="View/includes/scripts/general.js"></script>
 </head>
 <body>
     <div class="wrapper">

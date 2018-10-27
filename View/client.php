@@ -1,11 +1,3 @@
-
-
-<head>
-	<link rel="stylesheet" type="text/css" href="includes/style/style.css" >
-	<link rel="stylesheet" type="text/css" href="includes/style/datatables.css">
-	<title> Progiplus-client</title>
-	</head>
-<body>
   <section>
 
 	<h1>Annuaire Client</h1>
@@ -70,8 +62,11 @@
     <script type="text/javascript"  src="View/includes/scripts/datatables.js"></script>
     
     <script type="text/javascript">
-        $(document).ready( function () {
-            $('#table_client').DataTable();
-            } );
+		function init()
+		{
+			$('#table_client').DataTable( {"language": getLangageDataTable("client", true)} );
+		}
+		
+		window.onload = init;
     </script>
 
