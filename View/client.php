@@ -66,8 +66,8 @@
         </tbody>
     </table>
 </section>
-    <script type="text/javascript"  src="includes/scripts/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript"  src="includes/scripts/datatables.js"></script>
+    <script type="text/javascript"  src="View/includes/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript"  src="View/includes/scripts/datatables.js"></script>
     
     <script type="text/javascript">
         $(document).ready( function () {
