@@ -32,7 +32,7 @@ function getLangageDataTable(typeDeDonnee = "enregistrements", estMotFeminin = f
 	{
 		texteDataTable.infoEmpty = "Aucune " + typeDeDonnee + " disponible";
 		texteDataTable.zeroRecords = "Aucune " + typeDeDonnee + " trouvée";
-		texteDataTable.infoFiltered:   "(filtrées parmi _MAX_ "+ typeDeDonnee + "s)";
+		texteDataTable.infoFiltered = "(filtrées parmi _MAX_ "+ typeDeDonnee + "s)";
 	}
 	
 	return texteDataTable;
