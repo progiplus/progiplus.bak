@@ -47,8 +47,8 @@
                 echo '<td>' . $clients['nom'] . '</td>';
                 echo '<td>' . $clients['prenom'] . '</td>';
 
-                echo '<td><a href="#"><img src="assets/pencil.png" class="imageTableau" title="Modifier Profil client" alt="bouton_modifier"/></a>
-                   <a href="#"><img src="assets/cancel.png" class="imageTableau" title="Supprimer Profil client" alt="bouton_supprimer"/></a>
+                echo '<td><a href="#"><img src="View/assets/pencil.png" class="imageTableau" title="Modifier Profil client" alt="bouton_modifier"/></a>
+                   <a href="#"><img src="View/assets/cancel.png" class="imageTableau" title="Supprimer Profil client" alt="bouton_supprimer"/></a>
                 </td>';
             echo '</tr>';
         }
