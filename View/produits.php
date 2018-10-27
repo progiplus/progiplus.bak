@@ -77,22 +77,22 @@
       <td>---</td>
       <td>---</td>
       <td>---</td>
-      <td><img class="modal_modif" src="assets/pencil.png" title="Modifier Profil produit" alt="bouton_modifier" height="20">
-          <a href="#"><img src="assets/cancel.png" title="Supprimer Profil produit" alt="bouton_supprimer" height="20"/></a></td>
+      <td><img class="modal_modif" src="View/assets/pencil.png" title="Modifier Profil produit" alt="bouton_modifier" height="20">
+          <a href="#"><img src="View/assets/cancel.png" title="Supprimer Profil produit" alt="bouton_supprimer" height="20"/></a></td>
     </tr>
     <tr>
       <td>---</td>
       <td>---</td>
       <td>---</td>
-      <td><img class="modal_modif" src="assets/pencil.png" title="Modifier Profil produit" alt="bouton_modifier" height="20">
-          <a href="#"><img src="assets/cancel.png" title="Supprimer Profil produit" alt="bouton_supprimer" height="20"/></a></td>
+      <td><img class="modal_modif" src="View/assets/pencil.png" title="Modifier Profil produit" alt="bouton_modifier" height="20">
+          <a href="#"><img src="View/assets/cancel.png" title="Supprimer Profil produit" alt="bouton_supprimer" height="20"/></a></td>
     </tr>
     <tr>
       <td>---</td>
       <td>---</td>
       <td>---</td>
-      <td><img class="modal_modif" src="assets/pencil.png" title="Modifier Profil produit" alt="bouton_modifier" height="20">
-          <a href="#"><img src="assets/cancel.png" title="Supprimer Profil produit" alt="bouton_supprimer" height="20"/></a></td>
+      <td><img class="modal_modif" src="View/assets/pencil.png" title="Modifier Profil produit" alt="bouton_modifier" height="20">
+          <a href="#"><img src="View/assets/cancel.png" title="Supprimer Profil produit" alt="bouton_supprimer" height="20"/></a></td>
     </tr>
   </tbody>
 </table>
