@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../includes/style/style.css" >
-    <script src="../includes/scripts/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../View/includes/style/style.css" >
+    <script src="../View/includes/scripts/jquery-3.3.1.min.js"></script>
     <title> Progiplus-client</title>
 </head>
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class Produit
 {
     private $_reference;
@@ -19,23 +21,23 @@ class Produit
         }
         if(!$this->setDesignation($designation))
         {
-            throw new Exception("Produit : désignation incorrecte!");
+            throw new \Exception("Produit : désignation incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnit))
         {
-            throw new Exception("Produit : prix unitaire incorrect!");
+            throw new \Exception("Produit : prix unitaire incorrect!");
         }
         if(!$this->setActif($actif))
         {
-            throw new Exception("Produit : actif incorrect!");
+            throw new \Exception("Produit : actif incorrect!");
         }
         if(!$this->setGamme($gamme))
         {
-            throw new Exception("Produit : gamme incorrecte!");
+            throw new \Exception("Produit : gamme incorrecte!");
         }
         if(!$this->setCatProduit($catProduit))
         {
-            throw new Exception("Produit : catégorie-produit incorrect!");
+            throw new \Exception("Produit : catégorie-produit incorrect!");
         }
     }
     

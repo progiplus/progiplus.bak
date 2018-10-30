@@ -1,0 +1,6 @@
+# Ignore le dossier .idea
+.idea/
+
+.buildpath
+.project
+Bdd/mdp.php

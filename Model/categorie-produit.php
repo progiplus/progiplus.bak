@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class CategorieProduit
 {
     private $_id;
@@ -12,15 +14,15 @@ class CategorieProduit
         // On lève une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("Catégorie-Produit : id incorrect!");
+            throw new \Exception("Catégorie-Produit : id incorrect!");
         }
         if(!$this->setLibelle($libelle))
         {
-            throw new Exception("Catégorie-Produit : libellé incorrect!");
+            throw new \Exception("Catégorie-Produit : libellé incorrect!");
         }
         if(!$this->setCatParent($catParent))
         {
-            throw new Exception("Catégorie-Produit : catégorie parente incorrecte!");
+            throw new \Exception("Catégorie-Produit : catégorie parente incorrecte!");
         }
     }
     

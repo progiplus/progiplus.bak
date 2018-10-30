@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class Marque
 {
     private $_id;
@@ -7,15 +9,15 @@ class Marque
     
     public function __construct($id, $nom)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuï¿½ l'action ou non
+        // On lï¿½ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("Marque : id incorrect!");
+            throw new \Exception("Marque : id incorrect!");
         }
         if(!$this->setNom($nom))
         {
-            throw new Exception("Marque : nom incorrect!");
+            throw new \Exception("Marque : nom incorrect!");
         }
     }
     

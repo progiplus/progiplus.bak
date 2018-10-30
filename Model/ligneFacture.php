@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class ligneFacture
 {
     private $_id;
@@ -10,27 +12,27 @@ class ligneFacture
     
     public function __construct($id, $produit, $quantite, $prixUnitaire, $tva)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuï¿½ l'action ou non
+        // On lï¿½ve une exception si un setter renvoit faux.
         if(!$this->setId($id))
         {
-            throw new Exception("LigneFacture : id incorrect!");
+            throw new \Exception("LigneFacture : id incorrect!");
         }
         if(!$this->setQuantite($quantite))
         {
-            throw new Exception("LigneFacture : quantité incorrecte!");
+            throw new \Exception("LigneFacture : quantitï¿½ incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnitaire))
         {
-            throw new Exception("LigneFacture : prix unitaire incorrect!");
+            throw new \Exception("LigneFacture : prix unitaire incorrect!");
         }
         if(!$this->setTVA($tva))
         {
-            throw new Exception("LigneFacture : tva incorrect!");
+            throw new \Exception("LigneFacture : tva incorrect!");
         }
         if(!$this->setProduit($produit))
         {
-            throw new Exception("LigneFacture : produit incorrect!");
+            throw new \Exception("LigneFacture : produit incorrect!");
         }
     }
     
