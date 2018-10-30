@@ -1,5 +1,8 @@
 <?php
 
+
+namespace Model;
+
 class ligneDevis
 {
     private $_id;
@@ -10,27 +13,29 @@ class ligneDevis
     
     public function __construct($id, $produit, $quantite, $prixUnitaire, $tva)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuÃ© l'action ou non
+        // On lÃ¨ve une exception si un setter renvoit faux.
+
         if(!$this->setId($id))
         {
-            throw new Exception("LigneDevis : id incorrect!");
+            throw new \Exception("LigneDevis : id incorrect!");
         }
         if(!$this->setQuantite($quantite))
         {
-            throw new Exception("LigneDevis : quantité incorrecte!");
+            throw new \Exception("LigneDevis : quantitÃ© incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnitaire))
         {
-            throw new Exception("LigneDevis : prix unitaire incorrect!");
+            throw new \Exception("LigneDevis : prix unitaire incorrect!");
         }
         if(!$this->setTVA($tva))
         {
-            throw new Exception("LigneDevis : tva incorrect!");
+            throw new \Exception("LigneDevis : tva incorrect!");
         }
         if(!$this->setProduit($produit))
         {
-            throw new Exception("LigneDevis : produit incorrect!");
+            throw new \Exception("LigneDevis : produit incorrect!");
         }
     }
     
@@ -101,7 +106,7 @@ class ligneDevis
     
     public function setTVA($tva)
     {
-        $ok = $tva instanceof TVA;
+        $ok = $tva instanceof TVA ;
         if($ok)
         {
             $this->_tva = $tva;

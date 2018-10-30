@@ -1,5 +1,7 @@
 <?php
 
+namespace Model;
+
 class Produit
 {
     private $_reference;
@@ -11,31 +13,31 @@ class Produit
     
     public function __construct($ref, $designation, $prixUnit, $actif, $catProduit, $gamme)
     {
-        // Chaque setter renvoit vrai ou faux selon qu'il ait effectué l'action ou non
-        // On lève une exception si un setter renvoit faux.
+        // Chaque setter renvoit vrai ou faux selon qu'il ait effectuÃ© l'action ou non
+        // On lï¿½ve une exception si un setter renvoit faux.
         if(!$this->setReference($ref))
         {
-            throw new Exception("Produit : id incorrect!");
+            throw new Exception("Produit : rÃ©fÃ©rence incorrect!");
         }
         if(!$this->setDesignation($designation))
         {
-            throw new Exception("Produit : désignation incorrecte!");
+            throw new \Exception("Produit : dÃ©signation incorrecte!");
         }
         if(!$this->setPrixUnitaire($prixUnit))
         {
-            throw new Exception("Produit : prix unitaire incorrect!");
+            throw new \Exception("Produit : prix unitaire incorrect!");
         }
         if(!$this->setActif($actif))
         {
-            throw new Exception("Produit : actif incorrect!");
+            throw new \Exception("Produit : actif incorrect!");
         }
         if(!$this->setGamme($gamme))
         {
-            throw new Exception("Produit : gamme incorrecte!");
+            throw new \Exception("Produit : gamme incorrecte!");
         }
         if(!$this->setCatProduit($catProduit))
         {
-            throw new Exception("Produit : catégorie-produit incorrect!");
+            throw new \Exception("Produit : catÃ©gorie-produit incorrect!");
         }
     }
     
@@ -79,12 +81,12 @@ class Produit
         return $ok;
     }
     
-    public function setDesignation($libelle)
+    public function setDesignation($designation)
     {
-        $ok = is_string($libelle);
+        $ok = is_string($designation);
         if($ok)
         {
-            $this->_designation = $libelle;
+            $this->_designation = $designation;
         }
         return $ok;
     }

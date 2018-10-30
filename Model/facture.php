@@ -1,4 +1,7 @@
 <?php
+
+namespace Model;
+
 class Facture
 {
     private $_id;
@@ -10,19 +13,19 @@ class Facture
     public function __construct($id, $date, $actif, $adresse, $client)
     {
         if (!$this->setId($id)) {
-            throw new Exception("facture : Id incorrect!");
+            throw new \Exception("facture : Id incorrect!");
         }
         if (!$this->setDate($date)) {
-            throw new Exception("facture : Date incorrecte!");
+            throw new \Exception("facture : Date incorrecte!");
         }
         if (!$this->setActif($actif)) {
-            throw new Exception("facture : Actif incorrect!");
+            throw new \Exception("facture : Actif incorrect!");
         }
         if (!$this->setAdresse($adresse)) {
-            throw new Exception("facture : Adresse incorrecte!");
+            throw new \Exception("facture : Adresse incorrecte!");
         }
         if (!$this->setClient($client)) {
-            throw new Exception("facture : Client incorrect!");
+            throw new \Exception("facture : Client incorrect!");
         }
     }
 
