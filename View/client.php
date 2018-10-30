@@ -1,31 +1,6 @@
   <section>
 
 	<h1>Annuaire Client</h1>
-
-	<!-- version vanilla <table >
-
-		<tr>
-			<th>Code client</th>
-			<th>raison sociale</th>
-			<th>Nom contact</th>
-			<th>prenom de contact</th>
-			<th>service de contact</th>
-			<th>moyenn de communication</th>
-			<th>Actions</th>
-
-			</tr>
-			<td>---</td>
-			<td>---</td>
-			<td>---</td>
-			<td>---</td>
-			<td>---</td>
-			<td>---</td>
-			<td><a href="***"><img src="./assets/pencil.png" title="Modifier Profil client" alt="bouton_modifier" height="20"/></a>
-               <a href="***"><img src="./assets/cancel.png" title="Supprimer Profil client" alt="bouton_supprimer" height="20"/></a></td>
-		</td>
-	</table> -->
-
-    
     <table id="table_client" class="display">
         <thead>
             <tr>

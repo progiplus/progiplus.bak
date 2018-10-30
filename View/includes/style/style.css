@@ -7,11 +7,9 @@
     margin: 0;
     padding:0;
 }
-
 body{
     width: auto;
     margin: auto;
-	max-width: 960px;
 	background-color:#264040;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,35 +18,119 @@ body{
     margin: auto; 
     margin-top: 30px;
 }
-
-.contener
-{
-    max-width: 1060px;
-    margin: auto;
-}
-
-nav {
+nav{
     width: 200px;
-    background-color: rgb(67, 112, 112);
-    padding-top: 30px
+	display: inline-block;
 }
+h1{
+	color:white;
+	position:relative;
+	text-align:center;
+    height: 100px;
+	padding-top: 100px;
+}
+section{
+	width: 750px;
+	display: inline-block;
+	float: right;
+	text-align: center;
+}
+.separation{
+	border: 2px solid white;
+	margin: 20px 0;
+}
+/* ================================ */
+/* ================================ */
+/* ========== NAVIGATION ========== */
+/* ================================ */
+/* ================================ */
+
+#logo{
+    width: 200px;
+}
+#menu{
+    width: 200px;
+    height: 600px;
+    background-color: rgb(67, 112, 112);
+}
+#menu ul {
+    list-style-type: none;
+    width: auto;
+    z-index: 10;
+ }
+#menu ul li{
+    text-align:center;
+    height:40px;
+    line-height: 40px;	
+}
+#menu ul li:first-child{
+    text-align:center;
+    height:40px;
+    line-height: 40px;
+}
+#menu ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+#menu ul li a {
+    display:block;
+    width:200px;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+ }
+#menu ul li ul {
+    position:absolute;
+	margin-left:100px;
+	background-color: #555;
+	margin-top: -40px;
+	display:none;
+}
+#menu ul li:hover ul {
+    display:inline-block;
+}
+#menu ul li:hover ul li {
+
+ float:none;
+}
+#menu ul a:hover ul li {
+    background-color: yellow;
+    color: white;
+}
+#formMenu{
+	text-align: center;
+	padding-top: 10px;
+}
+#rechercher{
+	width:180px;
+	height:30px;
+	margin:10px 0 10px 0;
+}
+#rechercher input
+{
+    width: 162px;
+    height: 36px;
+    display:inline-block;
+}
+#rechercher button{
+	height: 40px;
+    float: right;
+}
+
 #icone-man{
     width:30px;
-    margin-left:80px;
-    margin-top: -30px;
+	margin: auto;	
 }
 #icone-man svg{
-     fill: white;
-    
+	fill: white;
 }
 #input-rechercher{
-margin-top: 10px;
-    display:inline-block;
-    
+	margin-top: 10px;
+	display:inline-block;
 }
 #input-rechercher input{
-    margin-left: 10px;
-       width:140px;
+	margin-left: 10px;
+	width:140px;
 }
 #button-search{
     background-color:#264040;
@@ -64,134 +146,11 @@ margin-top: 10px;
     /*background-color:;*/
     fill: white;
 }
-
- 
-/* ===== NAVIGATION ===== */
-
-.wrapper{
-    width: 960px;
-    margin: auto; 
-    margin-top: 30px;
-}
-
-
-section{
-    display: inline-block;
-    width: 700px;
-    float: right;
-}
-
-h1
-{
-	color:white;
-	position:relative;
-	text-align:center;
-    height: 100px;
-}
-
-/* ================================ */
-/* ================================ */
-/* ========== NAVIGATION ========== */
-/* ================================ */
-/* ================================ */
-nav{
-    display: inline-block;
-}
-#logo{
-
-    width: 200px;
-}
-#menu{
-    width: 200px;
-
-    height: 600px;
-    background-color: rgb(67, 112, 112);
-}
-#menu ul {
-    list-style-type: none;
-    width: auto;
-    z-index: 10;
- }
-#menu ul li{
-    text-align:center;
-    height:40px;
-    line-height: 40px;
-    white-space: nowrap;
-	border-bottom: 2px solid white;
-}
-#menu ul li:first-child{
-    text-align:center;
-    height:40px;
-    line-height: 40px;
-    white-space: nowrap;
-	border-top: 2px solid white;
-}
-#menu ul li a {
-    display:block;
-    width:200px;
-    color:white;
-    font-weight:bold;
-    text-decoration:none;
- }
-#menu li a:hover {
-    background-color: #555;
-    color: white;
-}
-#menu ul li ul {
-    display:none;
-}
-#menu ul li:hover ul {
-    display:inline-block;
-}
-#menu li:hover ul li {
-
- float:none;
- }
-#menu ul a:hover ul li {
-    background-color: yellow;
-    color: white;
-}
- #menu li ul {
- position:absolute;
-  margin-left:100px;
-  background-color: #555;
-  margin-top: -40px;
- }
- 
- #rechercher{
- width:180px;
- height:30px;
- margin:10px 0 10px 0;
-
-    float:none;
-}
-#menu li ul {
-    position:absolute;
-    margin-left:100px;
-    background-color: #555;
-    margin-top: -40px;
-}
-#rechercher{
-    width:auto;
-    padding:10px 0;
-	border-top: 2px solid white;
-}
-#rechercher input
-{
-    width: 162px;
-    height: 36px;
-    display:inline-block;
-}
-#rechercher button{
-	height: 40px;
-    float: right;
-}
 .imageRechercher
 {
 	width: 30px;
 	height: 36px;
 }
-
 
 /* ================================ */
 /* ================================ */
@@ -265,13 +224,13 @@ tr:nth-child(even)
 
 .modal-content {
 
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -287,32 +246,30 @@ tr:nth-child(even)
 }
 
 .close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 .close:hover,.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
 }
 .modal-body {
-  padding: 2px 16px;
+	padding: 2px 16px;
 }
 
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+	padding: 2px 16px;
+	background-color: #5cb85c;
+	color: white;
 }
-
-
 .imageTableau{
 	height: 20px;
 }
