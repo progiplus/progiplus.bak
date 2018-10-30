@@ -80,14 +80,6 @@ window.onclick = function(event) {
   }
 }
 
-function foncAjoutMarque(){
-  if (document.getElementById("marque_produit").checked) {
-          document.getElementById("ok").style.display = "block";
-      } else {
-          document.getElementById("ok").style.display = "none";
-      }
-  }
-
 $(document).ready( function () {
   $('#table_produits').DataTable({"language": getLangageDataTable("produit", false)});
 } );

@@ -7,19 +7,24 @@
     <h2>Ajouter un produit</h2>
   </div>
   <div class="modal-body">
-    <form onsubmit="return foncverif()">
+    <form>
       <p><label for="libellé_produit">Libellé :</label>
       <input type="text" id="libellé_produit" name="libellé_produit"></p>
 
-      <p><label for="marque_produit">Marque :</label>
-      <select name="marque_produit" id="marque_produit">
-        <option value="0" id="no">--</option>
-        <option value="1" id="ok">Nouveau</option>
+      <p><label for="marqueProduit">Marque :</label>
+      <select onchange="checkNewMarque" name="marqueProduit" id="marqueProduit">
+        <option value="0">Sélectionnez</option>
+        <option value="newP">Nouveau</option>
+        <input type="text" id="newMarque" name="newMarque">
+        <button type="button" id="validerNewMarque" name="validerNewMarque">Valider</button>
       </select></p>
 
-      <p><label for="gamme_produit">Gamme :</label>
-      <select name="gamme_produit" id="gamme_produit">
-        <option value="0">--</option>
+      <p><label for="gammeProduit">Gamme :</label>
+      <select onchange="checkNewGamme" name="gammeProduit" id="gammeProduit">
+        <option value="0">Sélectionnez</option>
+        <option value="newG">Nouveau</option>
+        <input type="text" id="newGamme" name="newGamme">
+        <button type="button" id="validerNewGamme" name="validerNewGamme">Valider</button>
       </select></p>
 
       <p><label for="référence_produit">Référence :</label>
@@ -54,7 +59,7 @@
     <h2>Modifier la Fiche produit</h2>
   </div>
   <div class="modal-body">
-    <form onsubmit="return foncverif()">
+    <form>
       <p><label for="libellé_produit">Libellé :</label>
       <input type="text" id="libellé_produit" name="libellé_produit"></p>
 
@@ -91,3 +96,41 @@
   </div>
   </div>
 </div>
+
+<script type="text/javascript">
+
+var marqueProduit = document.getElementById('marqueProduit');
+marqueProduit.onchange = checkNewMarque;
+marqueProduit.onchange();
+
+function checkNewMarque() {
+    var marqueProduit = this;
+    var newMarque = document.getElementById('newMarque');
+    var validerNewMarque = document.getElementById('validerNewMarque');
+    if (marqueProduit.options[marqueProduit.selectedIndex].value === 'newP') {
+        newMarque.style.display = '';
+        validerNewMarque.style.display = '';
+    } else {
+        newMarque.style.display = 'none';
+        validerNewMarque.style.display = 'none';
+    }
+}
+
+var marqueProduit = document.getElementById('marqueGamme');
+gammeProduit.onchange = checkNewGamme;
+gammeProduit.onchange();
+
+function checkNewGamme() {
+    var gammeProduit = this;
+    var newGamme = document.getElementById('newGamme');
+    var validerNewGamme = document.getElementById('validerNewGamme');
+    if (gammeProduit.options[gammeProduit.selectedIndex].value === 'newG') {
+        newGamme.style.display = '';
+        validerNewGamme.style.display = '';
+    } else {
+        newGamme.style.display = 'none';
+        validerNewGamme.style.display = 'none';
+    }
+}
+
+</script>
