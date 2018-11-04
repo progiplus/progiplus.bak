@@ -73,13 +73,7 @@ section{
     float: right;
 }
 
-h1
-{
-=======
-	display: inline-block;
-}
 h1{
->>>>>>> bengi
 	color:white;
 	position:relative;
 	text-align:center;
