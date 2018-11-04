@@ -34,33 +34,24 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
 		<circle cx="431" cy="412" r="20"/></g></svg>';
 ?>
 
-
 <nav>
     <div>
-        <img id="logo" src="View/assets/logo.png" width="200px">
-    </div>
-    
-
-    <div id="identification">
-        <div id="icone-man">
-			<?php echo $svgLogin ?>
-        </div>
-
-    </div>
-
-
-    <div id="form">
-        <form>
-            <div id="input-rechercher" >
-                <input type="text" placeholder="Rechercher..">
-            </div>
-
-            <button id="button-search" type="submit">
-				<?php echo $svgLoupe ?>
-            </button>
-        </form>
+        <img id="logo" src="View/assets/logo.png">
     </div>
     <div id="menu">
+		<form id="formMenu">
+			<div id="icone-man">
+				<?php echo $svgLogin ?>
+			</div>
+			<div id="input-rechercher" >
+				<input type="text" placeholder="Rechercher..">
+				<button id="button-search" type="submit">
+					<?php echo $svgLoupe ?>
+				</button>
+			</div>
+		</form>
+       <div class="separation"></div>
+       
         <ul>
             <li><a href="">Accueil</a></li>
             <li><a href="?page=client&action=listeClient">Annuaire Client</a>
@@ -75,19 +66,20 @@ $svgLogin = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.
                     <li><a href="#">Modifier un produit </a></li>
                 </ul>
             </li>
-        <li><a href="#">Devis</a>
-			<ul>
-				<li><a href="#">Nouveau devis</a></li>
-				<li><a href="#">Modifier devis</a></li>
-			</ul>
-		</li>
-                	
-		<li><a href="#">Facture</a>
-			<ul>
-				<li><a href="#">Nouvelle facture</a></li>
-				<li><a href="#">Modifier facture</a></li>
-			</ul>
-        </li>
-        <li><a href="#">Bon de livraison</a></li>
-    </ul>
+			<li><a href="#">Devis</a>
+				<ul>
+					<li><a href="#">Nouveau devis</a></li>
+					<li><a href="#">Modifier devis</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Facture</a>
+				<ul>
+					<li><a href="#">Nouvelle facture</a></li>
+					<li><a href="#">Modifier facture</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Bon de livraison</a></li>
+    	</ul>
+	</div>
 </nav>
