@@ -20,41 +20,21 @@ body{
 }
 nav{
     width: 200px;
-    padding-top: 30px
+	display: inline-block;
 }
-#icone-man{
-    width:30px;
-    margin-left:80px;
-    margin-top: -30px;
+h1{
+	color:white;
+	position:relative;
+	text-align:center;
+    height: 100px;
+	padding-top: 100px;
 }
-#icone-man svg{
-     fill: white;
-
+section{
+	width: 750px;
+	display: inline-block;
+	float: right;
+	text-align: center;
 }
-#input-rechercher{
-margin-top: 10px;
-    display:inline-block;
-
-}
-#input-rechercher input{
-    margin-left: 10px;
-       width:140px;
-}
-#button-search{
-    background-color:#264040;
-    display:inline;
-    margin-left: -5px;
-}
-
-#button-search svg
-{
-    display: inline-block;
-    height: 10px;
-    width: 18px;
-    /*background-color:;*/
-    fill: white;
-}
-
 .separation{
 	border: 2px solid white;
 	margin: 20px 0;
